@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanabadee Yamgeasorn</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body class="light">
+    <header>
+          
+        <img src="./assets/images/program.jpg" alt="freepik photo" class="profile-photo">
+        <p class="subtitle"><a href="https://www.freepik.com/free-vector/app-development-concept-with-laptop_10411024.htm#fromView=search&page=1&position=4&uuid=c20d1407-fa36-44f8-9771-a18966dc29d6" target="_blank">Image by freepik</a></p>
+        
+        <div class="profile-section">
+
+        <button onclick="toggleMode()" id="toggleButton" class="toggle-button">
+            <img id="toggleImage" src="./assets/images/light-mode.png" alt="Toggle Mode">        
+        </button>
+
+         </div>
+        <div class="header-content">
+        <h1>Hi,I'm Rookie.</h1>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <!-- เนื้อหาของเรซูเม่ -->
+        <img src="./assets/images/Nona.png" alt="Nona photo" class="Nona-photo">
+        <h2 class="namesubtitle">Thanabadee Yamgeasorn</h2>
+        <h5 class="description">I'm passionate in technologies, such as, coding, 
+            cryptocurrency, gaming, and gadgets.
+            So I decided to study in IT and related fields.
+            My strengths are Trial and error and Learn from mistakes.</h5>
+        <h4 class="center">MAIN CONTACT</h4>
+        <p class="space">📍Bangkok/Thailand 📱0853400440 ✉️nona.9sia@gmail.com</p>
+
+        <div class="container2">
+        <div class="left">
+            <h4 class="center2">EDUCATION</h4>
+            <p>Applied Computer Science-Multimedia</p>
+            <p>King Mongkut's University of Technology Thonburi</p>
+        </div>
+        <div class="right">
+            <h4 class="center3" >INTEREST</h4>
+            <p>Artificial Intelligence<span class="spread"> Video Games </span>Podcast</p>
+            <div class="sameline">
+                <p><span class="spread">Learning Health Exercise </span> 
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="button" target="_blank">Meme?</a></p>
+            </div>
+        </div>
+        </div>
+
+        <div class="skill">
+            <h2>SKILLS</h2>
+            <div class="spread-container">
+                <div class="spread1">
+                    <h4>Java(Main)</h4>
+                    <h4>C</h4>
+                    <h4>C#</h4>
+                </div>
+                <div class="spread2">
+                    <h4>CSS</h4>
+                    <h4>HTML</h4>
+                    <h4>Javascript</h4>
+                </div>
+                <div class="spread3">
+                    <h4>OOP</h4>
+                    <h4>Unix-Command</h4>
+                    <h4>MYSQL</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <footer>
+        <p class="copyright">
+            <span class="center1">©Hana World by 9Nona</span>
+            <a class="rightfooter button1" href="https://drive.google.com/drive/folders/1ZY9J5MROU0HU0gXNZlvCNs4OS_DlBaVD"  target="_blank">RESUME&Certificate</a>
+            <a class="rightfooter button1" href="https://github.com/Aum2015"  target="_blank">Github</a>
+            <a class="rightfooter button1" href="https://medium.com/@9Nona"  target="_blank">Medium</a>
+        </p>
+    </footer>
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            const footer = document.querySelector('footer');
+            body.classList.toggle('light');
+            body.classList.toggle('dark');
+            footer.classList.toggle('light');
+            footer.classList.toggle('dark');
+
+            // เปลี่ยนรูปภาพของปุ่ม Toggle Mode
+            const toggleImage = document.getElementById('toggleImage');
+            if (body.classList.contains('light')) {
+                toggleImage.src = './assets/images/light-mode.png';
+            } else {
+                toggleImage.src = './assets/images/dark-mode.png';
+            }
+        }
+    </script>
+</body>
+</html>

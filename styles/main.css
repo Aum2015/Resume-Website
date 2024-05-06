@@ -1,0 +1,260 @@
+:root {
+    --main-bg-color-light: #f4f4f4;
+    --main-bg-color-dark: #333;
+    --text-color-light: #000;
+    --text-color-dark: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--main-bg-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark {
+    background-color: var(--main-bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+.container {
+    overflow: auto;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #f99303;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 500px;
+}
+
+.skill {
+    background-color: #f99303;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: auto;
+    margin-left: -20px;
+    margin-right: -20px;
+    
+}
+
+.profile-photo {
+    float: left; /* จัดวางไว้ทางซ้าย */
+    margin-right: 20px; /* เพื่อเว้นระยะห่างระหว่างรูปภาพกับเนื้อหา */
+    border-radius: 25%; /* ทำให้รูปภาพเป็นวงกลม */
+    max-width: 720px; /* จำกัดความกว้างไม่เกิน 720px */
+    max-height: 480px; /* จำกัดความสูงไม่เกิน 480px */
+}
+
+.header-content {
+    margin-top: 170px; /* เพื่อปรับระยะห่างของเนื้อหาจากขอบบนของ Header */
+}
+
+footer {
+    background-color: var(--main-bg-color-light);
+    color: var(--text-color-light);
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: auto; /* ให้ footer ลงไปอยู่บรรทัดล่างสุดของหน้าเว็บ */
+}
+
+.subtitle {
+    float: left;
+    clear: left;
+    margin-top: 5px; /* ปรับระยะห่างระหว่างรูปภาพและข้อความ */
+    margin-left: 175px; /* ขยับข้อความไปทางด้านซ้าย 20px */
+}
+
+.namesubtitle {
+    float: left;
+    clear: left;
+    margin-top: 10px; /* ปรับระยะห่างระหว่างรูปภาพและข้อความ */
+    margin-left: 120px; /* ขยับข้อความไปทางด้านซ้าย 20px */
+    display: block;
+    
+}
+
+.toggle-button {
+    float: right; /* จัดปุ่มไปด้านขวาของ Header */
+    margin-top: 0px; /* ปรับระยะห่างด้านบนของปุ่ม */
+    margin-left: auto; /* ให้ปุ่มอยู่ด้านขวาของ Header */
+}
+
+.profile-section {
+    display: flex; /* ให้รูปภาพและข้อความอยู่ในรูปแบบ Flexbox */
+    align-items: center; /* จัดให้เรียงกันตามแนวตั้ง */
+}
+
+.Nona-photo {
+    max-width: 420px; /* จำกัดความกว้างไม่เกิน 200px */
+    max-height: 360px; /* จำกัดความสูงไม่เกิน 200px */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    float: right; /* จัดวางไปทางขวา */
+    margin-right: 20px; /* ระยะห่างของภาพกับเนื้อหา */
+}
+
+.description {
+    margin-top: 10px; /* Add margin for spacing */
+    clear: left; /* Ensure `<h6>` starts on a new line after floating elements */
+    white-space: pre-line; /* Preserve line breaks */
+    display: block; /* Ensure `<h6>` is a block-level element */
+    margin-left: 60px;
+
+}
+
+.center {
+    margin-left: 333px;
+
+}
+.center2 {
+    margin-left: 155px;
+
+}
+.center3 {
+    margin-right: 155px;
+
+}
+
+h1 {
+    font-size: 60px; 
+}
+h2 {
+    font-size: 48px; 
+}
+h3 {
+    font-size: 36px; 
+}
+h4 {
+    font-size: 30px; 
+}
+h5 {
+    font-size: 24px; 
+}
+h6 {
+    font-size: 18px; /* Set the font size */
+}
+.space {
+    font-size: 20px;
+    word-spacing: 160px; /* เพิ่มเว้นวรรคระหว่าง spacebar */
+}
+
+.left, .right {
+    font-size: 20px;
+    flex: 1;  
+}
+
+.left {
+    margin-left: 25px;
+}
+
+.right {
+    text-align: right;
+    margin-right: 25px;
+}
+
+.spread {
+    word-spacing: 80px;
+    text-align: center;
+}
+
+.spread1 {
+    
+    justify-content: left;
+    text-align: left;
+}
+
+.spread2 {
+   
+    justify-content: center;
+    text-align: center;
+}
+
+.spread3 {
+    
+    justify-content: right;
+    text-align: right;
+}
+
+.spread-container > div {
+    display: inline-block; /* Display each container inline */
+    vertical-align: top; /* Align containers to the top */
+    margin-right: 80px; /* Add spacing between containers */
+    margin-left: 120px;
+    margin-top: -40px;
+}
+
+.sameline {
+    display: inline;
+}
+
+.button {
+    display: inline-block;
+    padding: 0px 0px;
+    background-color: gray; /* Change background color */
+    color: #fff; /* Change text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+.copyright {
+    display: flex;
+}
+
+.rightfooter {
+    text-align: right; /* Right-align the "Video Games" text */
+    margin-right: 10px;
+    
+}
+
+.rightfooter:not(:last-child) {
+    margin-right: 90px; /* Adjust the spacing as needed */
+}
+.center1 {
+    text-align: center;
+    margin-left: 425px;
+    flex-grow: 1; /* Allow the center span to grow and take up available space */
+}
+
+.button1 {
+    display: inline-block;
+    padding: 0px 0px;
+    color: var(--link-color-light);
+    background-color: silver;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+.dark .button1 {
+    color: var(--link-color-dark);
+    display: inline-block;
+    background-color: gray;
+    padding: 0px 0px;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
